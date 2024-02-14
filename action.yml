@@ -1,0 +1,24 @@
+name: "Test-GitHub-Action"
+description: "This a sample github action."
+author: "nazir"
+
+# Add your action's branding here. This will appear on the GitHub Marketplace.
+branding:
+  icon: "heart"
+  color: "red"
+
+# Define your inputs here.
+inputs:
+  milliseconds:
+    description: "Wait in ms."
+    required: true
+    default: "1000"
+
+# Define your outputs here.
+outputs:
+  time:
+    description: "Execution finish time."
+
+runs:
+  using: node20
+  main: dist/index.js
