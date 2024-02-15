@@ -21,10 +21,13 @@
   },
   "homepage": "https://github.com/nazirahmad_microsoft/Test-GitHub-Action#readme",
   "devDependencies": {
+    "@types/node": "^20.11.17",
     "@vercel/ncc": "^0.38.1",
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@actions/core": "^1.10.1"
+    "@actions/core": "^1.10.1",
+    "@azure/identity": "^4.0.1",
+    "@azure/keyvault-secrets": "^4.7.0"
   }
 }

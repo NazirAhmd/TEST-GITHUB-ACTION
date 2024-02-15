@@ -9,10 +9,25 @@ branding:
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: "Wait in ms."
+  appId:
+    description: "AAD AppId."
     required: true
-    default: "1000"
+
+  appSecret:
+    description: "AAD App Secret."
+    required: true
+
+  keyVaultName:
+    description: "KeyVault Name."
+    required: true
+
+  tenantId:
+    description: "AADTenantId."
+    required: true
+
+  secretName:
+    description: "Secret Name."
+    required: true
 
 # Define your outputs here.
 outputs:
