@@ -11,7 +11,7 @@ export class KeyVaultUtility {
  
    public async FetchSecretFromKV(secretName: string): Promise<KeyVaultSecret> {
       let kvUrl: string = `https://${this._kvDetail.name}.vault.azure.net`;
-      this.SetCredentialsForRequest(this._kvDetail);
+      // this.SetCredentialsForRequest(this._kvDetail);
       const credential = new DefaultAzureCredential();
       const secretClient = new SecretClient(kvUrl, credential);
       return await secretClient.getSecret(secretName);

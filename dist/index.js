@@ -48107,7 +48107,7 @@ class KeyVaultUtility {
     FetchSecretFromKV(secretName) {
         return __awaiter(this, void 0, void 0, function* () {
             let kvUrl = `https://${this._kvDetail.name}.vault.azure.net`;
-            this.SetCredentialsForRequest(this._kvDetail);
+            // this.SetCredentialsForRequest(this._kvDetail);
             const credential = new identity_1.DefaultAzureCredential();
             const secretClient = new keyvault_secrets_1.SecretClient(kvUrl, credential);
             return yield secretClient.getSecret(secretName);
